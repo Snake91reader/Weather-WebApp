@@ -41,12 +41,7 @@ function weatherShowFn(data) {
     };
 
     const weatherImage = weatherImageMap[weatherCondition] // || 'path/to/default-weather.png';
-    $('#weather-icon').attr('src', weatherImage); // Set background image based on weather condition
-
-
-    // Construct the icon URL from the API response
-   // const iconCode = data.weather[0].icon;
-   // $('#weather-icon').attr('src',`a.png`);
+    $('#weather-icon').attr('src', weatherImage); 
     
     $('#weather-info').fadeIn();
 
